@@ -25,6 +25,7 @@ Make sure you have
 3. LLVM installed to run and test locally `cargo test --tests`
     * Easiest option is LLVM v14.0 ([Debian/Ubuntu](https://apt.llvm.org/) or [macOS](https://formulae.brew.sh/formula/llvm))
     * Otherwise, in `Cargo.toml` you'd need to change the `inkwell = { ..., branch = "master", features = ["your-llvm-version"] }` with LLVM version on your system (output of `llvm-config --version`)
+    * `export LLVM_SYS_140_PREFIX=/usr/local/Cellar/llvm@14/14.0.6`
 
 
 To build the book locally, navigate to the `book` subdirectory and follow the instructions in [mdbook](https://github.com/rust-lang/mdBook).
